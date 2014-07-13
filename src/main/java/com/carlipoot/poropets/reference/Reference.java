@@ -7,7 +7,7 @@ public class Reference {
     public static final String MOD_NAME = "Poro Pets";
 
     // Version info
-    public static final String VERSION = "@VERSION@";
+    public static final String VERSION = "1.7.2-1.0";
     public static final String FINGERPRINT = "@FINGERPRINT@";
 
     // Proxy

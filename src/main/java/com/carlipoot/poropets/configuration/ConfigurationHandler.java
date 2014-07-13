@@ -6,8 +6,10 @@ import java.io.File;
 
 public class ConfigurationHandler {
 
+    public static Configuration configuration;
+
     public static void init(File configFile) {
-        Configuration configuration = new Configuration(configFile);
+         configuration = new Configuration(configFile);
         Boolean configValue = false;
 
         try {
@@ -17,10 +19,10 @@ public class ConfigurationHandler {
         } catch (Exception e) {
 
         } finally {
-            configuration.save();
+            if ( configuration.hasChanged() ) {
+                configuration.save();
+            }
         }
-
-        System.out.println(configValue);
     }
 
 }
