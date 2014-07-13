@@ -23,6 +23,7 @@ public class PoroPets {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         // A comment
+        // Another comment
     }
 
     @Mod.EventHandler
