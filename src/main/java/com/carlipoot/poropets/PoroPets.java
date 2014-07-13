@@ -1,6 +1,7 @@
 package com.carlipoot.poropets;
 
 import com.carlipoot.poropets.configuration.ConfigurationHandler;
+import com.carlipoot.poropets.init.ModItems;
 import com.carlipoot.poropets.proxy.IProxy;
 import com.carlipoot.poropets.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -22,8 +23,8 @@ public class PoroPets {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
-        // A comment
-        // Another comment
+
+        ModItems.init();
     }
 
     @Mod.EventHandler
