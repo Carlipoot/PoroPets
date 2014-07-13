@@ -14,7 +14,7 @@ public class ItemPP extends Item {
 	public ItemPP() {
         super();
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTab.TS_TAB);
+        this.setCreativeTab(CreativeTab.PP_TAB);
         this.setNoRepair();
 	}
 

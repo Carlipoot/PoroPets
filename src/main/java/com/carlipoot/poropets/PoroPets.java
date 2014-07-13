@@ -1,6 +1,7 @@
 package com.carlipoot.poropets;
 
 import com.carlipoot.poropets.configuration.ConfigurationHandler;
+import com.carlipoot.poropets.entity.ModEntities;
 import com.carlipoot.poropets.init.ModItems;
 import com.carlipoot.poropets.proxy.IProxy;
 import com.carlipoot.poropets.reference.Reference;
@@ -25,6 +26,10 @@ public class PoroPets {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
         ModItems.init();
+
+        ModEntities.init();
+
+        proxy.initRenderingAndTextures();
     }
 
     @Mod.EventHandler

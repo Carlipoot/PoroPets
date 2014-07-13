@@ -11,7 +11,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class CreativeTab {
 
-	public static final CreativeTabs TS_TAB = new CreativeTabs(Reference.MOD_ID) {
+	public static final CreativeTabs PP_TAB = new CreativeTabs(Reference.MOD_ID) {
         @Override
         public Item getTabIconItem() {
             return Items.arrow;
@@ -20,7 +20,7 @@ public class CreativeTab {
         @Override
         @SideOnly(Side.CLIENT)
         public String getTranslatedTabLabel() {
-            return StatCollector.translateToLocal("key.categories.ts");
+            return StatCollector.translateToLocal("key.categories.pp");
         }
     };
 	

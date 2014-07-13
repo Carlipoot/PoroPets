@@ -12,4 +12,5 @@ public class ClientProxy extends CommonProxy {
         // Entities
         RenderingRegistry.registerEntityRenderingHandler(EntityPoro.class, new RenderPoro(new ModelPoro(), 0.25F));
     }
+
 }
